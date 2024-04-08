@@ -51,7 +51,6 @@ int main(int argc, const char **argv)
         else
             osm_data = std::move(*data);
     }
-    //Complete this TODO to satisfy Project Rubric Criterias of User Input
   
     // start_x`, `start_y`, `end_x`, and `end_y` and get
     // user input for these values using std::cin. Pass the user input to the
