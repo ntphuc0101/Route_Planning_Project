@@ -1,0 +1,76 @@
+\hypertarget{utest__rp__a__star__search_8cpp}{}\doxysection{test/utest\+\_\+rp\+\_\+a\+\_\+star\+\_\+search.cpp File Reference}
+\label{utest__rp__a__star__search_8cpp}\index{test/utest\_rp\_a\_star\_search.cpp@{test/utest\_rp\_a\_star\_search.cpp}}
+{\ttfamily \#include \char`\"{}gtest/gtest.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$optional$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../src/route\+\_\+model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/route\+\_\+planner.\+h\char`\"{}}\newline
+Include dependency graph for utest\+\_\+rp\+\_\+a\+\_\+star\+\_\+search.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utest__rp__a__star__search_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::byte $>$ \mbox{\hyperlink{utest__rp__a__star__search_8cpp_ad9a4c626d83e4d735e3e6dde13553c67}{Read\+OSMData}} (const std\+::string \&path)
+\item 
+\mbox{\hyperlink{utest__rp__a__star__search_8cpp_a2f627ed1de527df8cf9407c540e11762}{TEST\+\_\+F}} (\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}, Test\+Calculate\+HValue)
+\item 
+bool \mbox{\hyperlink{utest__rp__a__star__search_8cpp_af30504c5dc0761cbe94c33019708e551}{Nodes\+Same}} (\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$a, \mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$b)
+\item 
+\mbox{\hyperlink{utest__rp__a__star__search_8cpp_a89cf46642dd43be4dd7a1b79fc2a4554}{TEST\+\_\+F}} (\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}, Test\+Add\+Neighbors)
+\item 
+\mbox{\hyperlink{utest__rp__a__star__search_8cpp_a682d6ace7ef47747801160fe0bfc57f6}{TEST\+\_\+F}} (\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}, Test\+Construct\+Final\+Path)
+\item 
+\mbox{\hyperlink{utest__rp__a__star__search_8cpp_a88d3e83f2d88967245126a4618f17bf9}{TEST\+\_\+F}} (\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}, Test\+AStar\+Search)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utest__rp__a__star__search_8cpp_af30504c5dc0761cbe94c33019708e551}\label{utest__rp__a__star__search_8cpp_af30504c5dc0761cbe94c33019708e551}} 
+\index{utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}!NodesSame@{NodesSame}}
+\index{NodesSame@{NodesSame}!utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}}
+\doxysubsubsection{\texorpdfstring{NodesSame()}{NodesSame()}}
+{\footnotesize\ttfamily bool Nodes\+Same (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utest__rp__a__star__search_8cpp_ad9a4c626d83e4d735e3e6dde13553c67}\label{utest__rp__a__star__search_8cpp_ad9a4c626d83e4d735e3e6dde13553c67}} 
+\index{utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}!ReadOSMData@{ReadOSMData}}
+\index{ReadOSMData@{ReadOSMData}!utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadOSMData()}{ReadOSMData()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::byte$>$ Read\+OSMData (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utest__rp__a__star__search_8cpp_a89cf46642dd43be4dd7a1b79fc2a4554}\label{utest__rp__a__star__search_8cpp_a89cf46642dd43be4dd7a1b79fc2a4554}} 
+\index{utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}}]{,  }\item[{Test\+Add\+Neighbors}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utest__rp__a__star__search_8cpp_a88d3e83f2d88967245126a4618f17bf9}\label{utest__rp__a__star__search_8cpp_a88d3e83f2d88967245126a4618f17bf9}} 
+\index{utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}}]{,  }\item[{Test\+AStar\+Search}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utest__rp__a__star__search_8cpp_a2f627ed1de527df8cf9407c540e11762}\label{utest__rp__a__star__search_8cpp_a2f627ed1de527df8cf9407c540e11762}} 
+\index{utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}}]{,  }\item[{Test\+Calculate\+HValue}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utest__rp__a__star__search_8cpp_a682d6ace7ef47747801160fe0bfc57f6}\label{utest__rp__a__star__search_8cpp_a682d6ace7ef47747801160fe0bfc57f6}} 
+\index{utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!utest\_rp\_a\_star\_search.cpp@{utest\_rp\_a\_star\_search.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRoutePlannerTest}{Route\+Planner\+Test}}}]{,  }\item[{Test\+Construct\+Final\+Path}]{ }\end{DoxyParamCaption})}
+

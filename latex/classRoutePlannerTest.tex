@@ -1,0 +1,137 @@
+\hypertarget{classRoutePlannerTest}{}\doxysection{Route\+Planner\+Test Class Reference}
+\label{classRoutePlannerTest}\index{RoutePlannerTest@{RoutePlannerTest}}
+
+
+Inheritance diagram for Route\+Planner\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classRoutePlannerTest__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Route\+Planner\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRoutePlannerTest__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classRoutePlannerTest_ad1891db187ba8f9d0569da8e5e8b699c}{osm\+\_\+data\+\_\+file}} = \char`\"{}../map.\+osm\char`\"{}
+\item 
+std\+::vector$<$ std\+::byte $>$ \mbox{\hyperlink{classRoutePlannerTest_ab033330ce332a7b8518531a4433fd878}{osm\+\_\+data}} = \mbox{\hyperlink{utest__rp__a__star__search_8cpp_ad9a4c626d83e4d735e3e6dde13553c67}{Read\+OSMData}}(\mbox{\hyperlink{classRoutePlannerTest_ad1891db187ba8f9d0569da8e5e8b699c}{osm\+\_\+data\+\_\+file}})
+\item 
+\mbox{\hyperlink{classRouteModel}{Route\+Model}} \mbox{\hyperlink{classRoutePlannerTest_ad3d0833a716e02553c4a248f0c86404a}{model}} \{\mbox{\hyperlink{classRoutePlannerTest_ab033330ce332a7b8518531a4433fd878}{osm\+\_\+data}}\}
+\item 
+\mbox{\hyperlink{classRoutePlanner}{Route\+Planner}} \mbox{\hyperlink{classRoutePlannerTest_a161d6e286947b28c52e6b5e2cb55469c}{route\+\_\+planner}} \{\mbox{\hyperlink{classRoutePlannerTest_ad3d0833a716e02553c4a248f0c86404a}{model}}, 10, 10, 90, 90\}
+\item 
+float \mbox{\hyperlink{classRoutePlannerTest_abd5704f2e50f29eb393feabe6786059e}{start\+\_\+x}} = 0.\+1
+\item 
+float \mbox{\hyperlink{classRoutePlannerTest_a1e7277f326a8c7e6a278eedcf3f1e41b}{start\+\_\+y}} = 0.\+1
+\item 
+float \mbox{\hyperlink{classRoutePlannerTest_a0b222c26dfa13262c4b86eaecdb4bc6f}{end\+\_\+x}} = 0.\+9
+\item 
+float \mbox{\hyperlink{classRoutePlannerTest_a4a13dc804c7242b13d448a54de93504f}{end\+\_\+y}} = 0.\+9
+\item 
+\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$ \mbox{\hyperlink{classRoutePlannerTest_aa13ed8cb10efdc1e14e136ed37b97599}{start\+\_\+node}} = \&model.\+Find\+Closest\+Node(\mbox{\hyperlink{classRoutePlannerTest_abd5704f2e50f29eb393feabe6786059e}{start\+\_\+x}}, \mbox{\hyperlink{classRoutePlannerTest_a1e7277f326a8c7e6a278eedcf3f1e41b}{start\+\_\+y}})
+\item 
+\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$ \mbox{\hyperlink{classRoutePlannerTest_a7093db75cf543471a8cba3adf8da5b4b}{end\+\_\+node}} = \&model.\+Find\+Closest\+Node(\mbox{\hyperlink{classRoutePlannerTest_a0b222c26dfa13262c4b86eaecdb4bc6f}{end\+\_\+x}}, \mbox{\hyperlink{classRoutePlannerTest_a4a13dc804c7242b13d448a54de93504f}{end\+\_\+y}})
+\item 
+float \mbox{\hyperlink{classRoutePlannerTest_a5bc94f4b90e3f538c7c5f6e25455b29d}{mid\+\_\+x}} = 0.\+5
+\item 
+float \mbox{\hyperlink{classRoutePlannerTest_a010beb5526985ca1cecb76616ca6b0a5}{mid\+\_\+y}} = 0.\+5
+\item 
+\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$ \mbox{\hyperlink{classRoutePlannerTest_a7a29d99c6278d3277972fc25bec9b974}{mid\+\_\+node}} = \&model.\+Find\+Closest\+Node(\mbox{\hyperlink{classRoutePlannerTest_a5bc94f4b90e3f538c7c5f6e25455b29d}{mid\+\_\+x}}, \mbox{\hyperlink{classRoutePlannerTest_a010beb5526985ca1cecb76616ca6b0a5}{mid\+\_\+y}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRoutePlannerTest_a7093db75cf543471a8cba3adf8da5b4b}\label{classRoutePlannerTest_a7093db75cf543471a8cba3adf8da5b4b}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!end\_node@{end\_node}}
+\index{end\_node@{end\_node}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{end\_node}{end\_node}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}}$\ast$ Route\+Planner\+Test\+::end\+\_\+node = \&model.\+Find\+Closest\+Node(\mbox{\hyperlink{classRoutePlannerTest_a0b222c26dfa13262c4b86eaecdb4bc6f}{end\+\_\+x}}, \mbox{\hyperlink{classRoutePlannerTest_a4a13dc804c7242b13d448a54de93504f}{end\+\_\+y}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_a0b222c26dfa13262c4b86eaecdb4bc6f}\label{classRoutePlannerTest_a0b222c26dfa13262c4b86eaecdb4bc6f}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!end\_x@{end\_x}}
+\index{end\_x@{end\_x}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{end\_x}{end\_x}}
+{\footnotesize\ttfamily float Route\+Planner\+Test\+::end\+\_\+x = 0.\+9\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_a4a13dc804c7242b13d448a54de93504f}\label{classRoutePlannerTest_a4a13dc804c7242b13d448a54de93504f}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!end\_y@{end\_y}}
+\index{end\_y@{end\_y}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{end\_y}{end\_y}}
+{\footnotesize\ttfamily float Route\+Planner\+Test\+::end\+\_\+y = 0.\+9\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_a7a29d99c6278d3277972fc25bec9b974}\label{classRoutePlannerTest_a7a29d99c6278d3277972fc25bec9b974}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!mid\_node@{mid\_node}}
+\index{mid\_node@{mid\_node}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{mid\_node}{mid\_node}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}}$\ast$ Route\+Planner\+Test\+::mid\+\_\+node = \&model.\+Find\+Closest\+Node(\mbox{\hyperlink{classRoutePlannerTest_a5bc94f4b90e3f538c7c5f6e25455b29d}{mid\+\_\+x}}, \mbox{\hyperlink{classRoutePlannerTest_a010beb5526985ca1cecb76616ca6b0a5}{mid\+\_\+y}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_a5bc94f4b90e3f538c7c5f6e25455b29d}\label{classRoutePlannerTest_a5bc94f4b90e3f538c7c5f6e25455b29d}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!mid\_x@{mid\_x}}
+\index{mid\_x@{mid\_x}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{mid\_x}{mid\_x}}
+{\footnotesize\ttfamily float Route\+Planner\+Test\+::mid\+\_\+x = 0.\+5\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_a010beb5526985ca1cecb76616ca6b0a5}\label{classRoutePlannerTest_a010beb5526985ca1cecb76616ca6b0a5}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!mid\_y@{mid\_y}}
+\index{mid\_y@{mid\_y}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{mid\_y}{mid\_y}}
+{\footnotesize\ttfamily float Route\+Planner\+Test\+::mid\+\_\+y = 0.\+5\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_ad3d0833a716e02553c4a248f0c86404a}\label{classRoutePlannerTest_ad3d0833a716e02553c4a248f0c86404a}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!model@{model}}
+\index{model@{model}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteModel}{Route\+Model}} Route\+Planner\+Test\+::model \{\mbox{\hyperlink{classRoutePlannerTest_ab033330ce332a7b8518531a4433fd878}{osm\+\_\+data}}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_ab033330ce332a7b8518531a4433fd878}\label{classRoutePlannerTest_ab033330ce332a7b8518531a4433fd878}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!osm\_data@{osm\_data}}
+\index{osm\_data@{osm\_data}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{osm\_data}{osm\_data}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::byte$>$ Route\+Planner\+Test\+::osm\+\_\+data = \mbox{\hyperlink{utest__rp__a__star__search_8cpp_ad9a4c626d83e4d735e3e6dde13553c67}{Read\+OSMData}}(\mbox{\hyperlink{classRoutePlannerTest_ad1891db187ba8f9d0569da8e5e8b699c}{osm\+\_\+data\+\_\+file}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_ad1891db187ba8f9d0569da8e5e8b699c}\label{classRoutePlannerTest_ad1891db187ba8f9d0569da8e5e8b699c}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!osm\_data\_file@{osm\_data\_file}}
+\index{osm\_data\_file@{osm\_data\_file}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{osm\_data\_file}{osm\_data\_file}}
+{\footnotesize\ttfamily std\+::string Route\+Planner\+Test\+::osm\+\_\+data\+\_\+file = \char`\"{}../map.\+osm\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_a161d6e286947b28c52e6b5e2cb55469c}\label{classRoutePlannerTest_a161d6e286947b28c52e6b5e2cb55469c}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!route\_planner@{route\_planner}}
+\index{route\_planner@{route\_planner}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{route\_planner}{route\_planner}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRoutePlanner}{Route\+Planner}} Route\+Planner\+Test\+::route\+\_\+planner \{\mbox{\hyperlink{classRoutePlannerTest_ad3d0833a716e02553c4a248f0c86404a}{model}}, 10, 10, 90, 90\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_aa13ed8cb10efdc1e14e136ed37b97599}\label{classRoutePlannerTest_aa13ed8cb10efdc1e14e136ed37b97599}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!start\_node@{start\_node}}
+\index{start\_node@{start\_node}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{start\_node}{start\_node}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}}$\ast$ Route\+Planner\+Test\+::start\+\_\+node = \&model.\+Find\+Closest\+Node(\mbox{\hyperlink{classRoutePlannerTest_abd5704f2e50f29eb393feabe6786059e}{start\+\_\+x}}, \mbox{\hyperlink{classRoutePlannerTest_a1e7277f326a8c7e6a278eedcf3f1e41b}{start\+\_\+y}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_abd5704f2e50f29eb393feabe6786059e}\label{classRoutePlannerTest_abd5704f2e50f29eb393feabe6786059e}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!start\_x@{start\_x}}
+\index{start\_x@{start\_x}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{start\_x}{start\_x}}
+{\footnotesize\ttfamily float Route\+Planner\+Test\+::start\+\_\+x = 0.\+1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRoutePlannerTest_a1e7277f326a8c7e6a278eedcf3f1e41b}\label{classRoutePlannerTest_a1e7277f326a8c7e6a278eedcf3f1e41b}} 
+\index{RoutePlannerTest@{RoutePlannerTest}!start\_y@{start\_y}}
+\index{start\_y@{start\_y}!RoutePlannerTest@{RoutePlannerTest}}
+\doxysubsubsection{\texorpdfstring{start\_y}{start\_y}}
+{\footnotesize\ttfamily float Route\+Planner\+Test\+::start\+\_\+y = 0.\+1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/\mbox{\hyperlink{utest__rp__a__star__search_8cpp}{utest\+\_\+rp\+\_\+a\+\_\+star\+\_\+search.\+cpp}}\end{DoxyCompactItemize}

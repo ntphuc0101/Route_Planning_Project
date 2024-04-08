@@ -1,0 +1,66 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Cloning}\label{md_README_autotoc_md1}
+When cloning this project, be sure to use the {\ttfamily -\/-\/recurse-\/submodules} flag. Using HTTPS\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone https://github.com/udacity/CppND-\/Route-\/Planning-\/Project.git -\/-\/recurse-\/submodules}
+
+\end{DoxyCode}
+ or with SSH\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone git@github.com:udacity/CppND-\/Route-\/Planning-\/Project.git -\/-\/recurse-\/submodules}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md2}{}\doxysection{Dependencies for Running Locally}\label{md_README_autotoc_md2}
+
+\begin{DoxyItemize}
+\item cmake $>$= 3.\+11.\+3
+\begin{DoxyItemize}
+\item All OSes\+: \href{https://cmake.org/install/}{\texttt{ click here for installation instructions}}
+\end{DoxyItemize}
+\item make $>$= 4.\+1 (Linux, Mac), 3.\+81 (Windows)
+\begin{DoxyItemize}
+\item Linux\+: make is installed by default on most Linux distros
+\item Mac\+: \href{https://developer.apple.com/xcode/features/}{\texttt{ install Xcode command line tools to get make}}
+\item Windows\+: \href{http://gnuwin32.sourceforge.net/packages/make.htm}{\texttt{ Click here for installation instructions}}
+\end{DoxyItemize}
+\item gcc/g++ $>$= 7.\+4.\+0
+\begin{DoxyItemize}
+\item Linux\+: gcc / g++ is installed by default on most Linux distros
+\item Mac\+: same instructions as make -\/ \href{https://developer.apple.com/xcode/features/}{\texttt{ install Xcode command line tools}}
+\item Windows\+: recommend using \href{http://www.mingw.org/}{\texttt{ Min\+GW}}
+\end{DoxyItemize}
+\item IO2D
+\begin{DoxyItemize}
+\item Installation instructions for all operating systems can be found \href{https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md}{\texttt{ here}}
+\item This library must be built in a place where CMake {\ttfamily find\+\_\+package} will be able to find it
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md3}{}\doxysection{Compiling and Running}\label{md_README_autotoc_md3}
+\hypertarget{md_README_autotoc_md4}{}\doxysubsection{Compiling}\label{md_README_autotoc_md4}
+To compile the project, first, create a {\ttfamily build} directory and change to that directory\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkdir build \&\& cd build}
+
+\end{DoxyCode}
+ From within the {\ttfamily build} directory, then run {\ttfamily cmake} and {\ttfamily make} as follows\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake ..}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+ \hypertarget{md_README_autotoc_md5}{}\doxysubsection{Running}\label{md_README_autotoc_md5}
+The executable will be placed in the {\ttfamily build} directory. From within {\ttfamily build}, you can run the project as follows\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./OSM\_A\_star\_search}
+
+\end{DoxyCode}
+ Or to specify a map file\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./OSM\_A\_star\_search -\/f ../<your\_osm\_file.osm>}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md6}{}\doxysection{Testing}\label{md_README_autotoc_md6}
+The testing executable is also placed in the {\ttfamily build} directory. From within {\ttfamily build}, you can run the unit tests as follows\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./test}
+
+\end{DoxyCode}
+ 

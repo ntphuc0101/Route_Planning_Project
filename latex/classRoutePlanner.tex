@@ -1,0 +1,87 @@
+\hypertarget{classRoutePlanner}{}\doxysection{Route\+Planner Class Reference}
+\label{classRoutePlanner}\index{RoutePlanner@{RoutePlanner}}
+
+
+{\ttfamily \#include $<$route\+\_\+planner.\+h$>$}
+
+
+
+Collaboration diagram for Route\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classRoutePlanner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRoutePlanner_adbe2ce8ad209d210457daa1300a3e0d4}{Route\+Planner}} (\mbox{\hyperlink{classRouteModel}{Route\+Model}} \&model, float start\+\_\+x, float start\+\_\+y, float end\+\_\+x, float end\+\_\+y)
+\item 
+float \mbox{\hyperlink{classRoutePlanner_a096fbb6ddb55ea5f2438660a702eb398}{Get\+Distance}} () const
+\item 
+void \mbox{\hyperlink{classRoutePlanner_a885fadd105940978990b62eb4b03e28d}{AStar\+Search}} ()
+\item 
+void \mbox{\hyperlink{classRoutePlanner_aec5b1268d17e36ec1d164ddbf2506220}{Add\+Neighbors}} (\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$current\+\_\+node)
+\item 
+float \mbox{\hyperlink{classRoutePlanner_afdb190e640e4d2c07da62f50dd930f96}{Calculate\+HValue}} (\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} const $\ast$node)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $>$ \mbox{\hyperlink{classRoutePlanner_a032595cefc9725f4de449a2ba8e57a04}{Construct\+Final\+Path}} (\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$)
+\item 
+\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$ \mbox{\hyperlink{classRoutePlanner_abca644f6c4d080a5251ce6b1fde9d647}{Next\+Node}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRoutePlanner_adbe2ce8ad209d210457daa1300a3e0d4}\label{classRoutePlanner_adbe2ce8ad209d210457daa1300a3e0d4}} 
+\index{RoutePlanner@{RoutePlanner}!RoutePlanner@{RoutePlanner}}
+\index{RoutePlanner@{RoutePlanner}!RoutePlanner@{RoutePlanner}}
+\doxysubsubsection{\texorpdfstring{RoutePlanner()}{RoutePlanner()}}
+{\footnotesize\ttfamily Route\+Planner\+::\+Route\+Planner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteModel}{Route\+Model}} \&}]{model,  }\item[{float}]{start\+\_\+x,  }\item[{float}]{start\+\_\+y,  }\item[{float}]{end\+\_\+x,  }\item[{float}]{end\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoutePlanner_aec5b1268d17e36ec1d164ddbf2506220}\label{classRoutePlanner_aec5b1268d17e36ec1d164ddbf2506220}} 
+\index{RoutePlanner@{RoutePlanner}!AddNeighbors@{AddNeighbors}}
+\index{AddNeighbors@{AddNeighbors}!RoutePlanner@{RoutePlanner}}
+\doxysubsubsection{\texorpdfstring{AddNeighbors()}{AddNeighbors()}}
+{\footnotesize\ttfamily void Route\+Planner\+::\+Add\+Neighbors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$}]{current\+\_\+node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoutePlanner_a885fadd105940978990b62eb4b03e28d}\label{classRoutePlanner_a885fadd105940978990b62eb4b03e28d}} 
+\index{RoutePlanner@{RoutePlanner}!AStarSearch@{AStarSearch}}
+\index{AStarSearch@{AStarSearch}!RoutePlanner@{RoutePlanner}}
+\doxysubsubsection{\texorpdfstring{AStarSearch()}{AStarSearch()}}
+{\footnotesize\ttfamily void Route\+Planner\+::\+AStar\+Search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoutePlanner_afdb190e640e4d2c07da62f50dd930f96}\label{classRoutePlanner_afdb190e640e4d2c07da62f50dd930f96}} 
+\index{RoutePlanner@{RoutePlanner}!CalculateHValue@{CalculateHValue}}
+\index{CalculateHValue@{CalculateHValue}!RoutePlanner@{RoutePlanner}}
+\doxysubsubsection{\texorpdfstring{CalculateHValue()}{CalculateHValue()}}
+{\footnotesize\ttfamily float Route\+Planner\+::\+Calculate\+HValue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} const $\ast$}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoutePlanner_a032595cefc9725f4de449a2ba8e57a04}\label{classRoutePlanner_a032595cefc9725f4de449a2ba8e57a04}} 
+\index{RoutePlanner@{RoutePlanner}!ConstructFinalPath@{ConstructFinalPath}}
+\index{ConstructFinalPath@{ConstructFinalPath}!RoutePlanner@{RoutePlanner}}
+\doxysubsubsection{\texorpdfstring{ConstructFinalPath()}{ConstructFinalPath()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $>$ Route\+Planner\+::\+Construct\+Final\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$}]{current\+\_\+node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoutePlanner_a096fbb6ddb55ea5f2438660a702eb398}\label{classRoutePlanner_a096fbb6ddb55ea5f2438660a702eb398}} 
+\index{RoutePlanner@{RoutePlanner}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!RoutePlanner@{RoutePlanner}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}}
+{\footnotesize\ttfamily float Route\+Planner\+::\+Get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRoutePlanner_abca644f6c4d080a5251ce6b1fde9d647}\label{classRoutePlanner_abca644f6c4d080a5251ce6b1fde9d647}} 
+\index{RoutePlanner@{RoutePlanner}!NextNode@{NextNode}}
+\index{NextNode@{NextNode}!RoutePlanner@{RoutePlanner}}
+\doxysubsubsection{\texorpdfstring{NextNode()}{NextNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteModel_1_1Node}{Route\+Model\+::\+Node}} $\ast$ Route\+Planner\+::\+Next\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{route__planner_8h}{route\+\_\+planner.\+h}}\item 
+src/\mbox{\hyperlink{route__planner_8cpp}{route\+\_\+planner.\+cpp}}\end{DoxyCompactItemize}

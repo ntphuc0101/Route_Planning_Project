@@ -1,0 +1,119 @@
+\hypertarget{classRouteModel_1_1Node}{}\doxysection{Route\+Model\+::Node Class Reference}
+\label{classRouteModel_1_1Node}\index{RouteModel::Node@{RouteModel::Node}}
+
+
+{\ttfamily \#include $<$route\+\_\+model.\+h$>$}
+
+
+
+Inheritance diagram for Route\+Model\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classRouteModel_1_1Node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Route\+Model\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classRouteModel_1_1Node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRouteModel_1_1Node_a7a40f92ee8335911d86458617a07560d}{Find\+Neighbors}} ()
+\item 
+float \mbox{\hyperlink{classRouteModel_1_1Node_ab5dc8166505575ba2e9db36457249afc}{distance}} (\mbox{\hyperlink{classRouteModel_1_1Node}{Node}} other) const
+\item 
+\mbox{\hyperlink{classRouteModel_1_1Node_ad2d8ed44fc543a0580ace512325be52c}{Node}} ()
+\item 
+\mbox{\hyperlink{classRouteModel_1_1Node_af942f8b3887fff0d7190428c40a150e5}{Node}} (int idx, \mbox{\hyperlink{classRouteModel}{Route\+Model}} $\ast$search\+\_\+model, \mbox{\hyperlink{structModel_1_1Node}{Model\+::\+Node}} node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRouteModel_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classRouteModel_1_1Node_abcaccb0fa581594eb4b12a0b12bf1bd4}{parent}} = nullptr
+\item 
+float \mbox{\hyperlink{classRouteModel_1_1Node_ad39b5f23110470431cbf4ee9c6394d37}{h\+\_\+value}} = std\+::numeric\+\_\+limits$<$float$>$\+::max()
+\item 
+float \mbox{\hyperlink{classRouteModel_1_1Node_a3b35932c3e6a64f327c3c0cfc7163061}{g\+\_\+value}} = 0.\+0
+\item 
+bool \mbox{\hyperlink{classRouteModel_1_1Node_a3fdd3df8db64b83480cf109289b0df31}{visited}} = false
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classRouteModel_1_1Node}{Node}} $\ast$ $>$ \mbox{\hyperlink{classRouteModel_1_1Node_aa91fee54f8b21b4703bfb47cfaed34d3}{neighbors}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRouteModel_1_1Node_ad2d8ed44fc543a0580ace512325be52c}\label{classRouteModel_1_1Node_ad2d8ed44fc543a0580ace512325be52c}} 
+\index{RouteModel::Node@{RouteModel::Node}!Node@{Node}}
+\index{Node@{Node}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Route\+Model\+::\+Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRouteModel_1_1Node_af942f8b3887fff0d7190428c40a150e5}\label{classRouteModel_1_1Node_af942f8b3887fff0d7190428c40a150e5}} 
+\index{RouteModel::Node@{RouteModel::Node}!Node@{Node}}
+\index{Node@{Node}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Route\+Model\+::\+Node\+::\+Node (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{\mbox{\hyperlink{classRouteModel}{Route\+Model}} $\ast$}]{search\+\_\+model,  }\item[{\mbox{\hyperlink{structModel_1_1Node}{Model\+::\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRouteModel_1_1Node_ab5dc8166505575ba2e9db36457249afc}\label{classRouteModel_1_1Node_ab5dc8166505575ba2e9db36457249afc}} 
+\index{RouteModel::Node@{RouteModel::Node}!distance@{distance}}
+\index{distance@{distance}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float Route\+Model\+::\+Node\+::distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRouteModel_1_1Node}{Node}}}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRouteModel_1_1Node_a7a40f92ee8335911d86458617a07560d}\label{classRouteModel_1_1Node_a7a40f92ee8335911d86458617a07560d}} 
+\index{RouteModel::Node@{RouteModel::Node}!FindNeighbors@{FindNeighbors}}
+\index{FindNeighbors@{FindNeighbors}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{FindNeighbors()}{FindNeighbors()}}
+{\footnotesize\ttfamily void Route\+Model\+::\+Node\+::\+Find\+Neighbors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRouteModel_1_1Node_a3b35932c3e6a64f327c3c0cfc7163061}\label{classRouteModel_1_1Node_a3b35932c3e6a64f327c3c0cfc7163061}} 
+\index{RouteModel::Node@{RouteModel::Node}!g\_value@{g\_value}}
+\index{g\_value@{g\_value}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{g\_value}{g\_value}}
+{\footnotesize\ttfamily float Route\+Model\+::\+Node\+::g\+\_\+value = 0.\+0}
+
+\mbox{\Hypertarget{classRouteModel_1_1Node_ad39b5f23110470431cbf4ee9c6394d37}\label{classRouteModel_1_1Node_ad39b5f23110470431cbf4ee9c6394d37}} 
+\index{RouteModel::Node@{RouteModel::Node}!h\_value@{h\_value}}
+\index{h\_value@{h\_value}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{h\_value}{h\_value}}
+{\footnotesize\ttfamily float Route\+Model\+::\+Node\+::h\+\_\+value = std\+::numeric\+\_\+limits$<$float$>$\+::max()}
+
+\mbox{\Hypertarget{classRouteModel_1_1Node_aa91fee54f8b21b4703bfb47cfaed34d3}\label{classRouteModel_1_1Node_aa91fee54f8b21b4703bfb47cfaed34d3}} 
+\index{RouteModel::Node@{RouteModel::Node}!neighbors@{neighbors}}
+\index{neighbors@{neighbors}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{neighbors}{neighbors}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classRouteModel_1_1Node}{Node}} $\ast$$>$ Route\+Model\+::\+Node\+::neighbors}
+
+\mbox{\Hypertarget{classRouteModel_1_1Node_abcaccb0fa581594eb4b12a0b12bf1bd4}\label{classRouteModel_1_1Node_abcaccb0fa581594eb4b12a0b12bf1bd4}} 
+\index{RouteModel::Node@{RouteModel::Node}!parent@{parent}}
+\index{parent@{parent}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRouteModel_1_1Node}{Node}}$\ast$ Route\+Model\+::\+Node\+::parent = nullptr}
+
+\mbox{\Hypertarget{classRouteModel_1_1Node_a3fdd3df8db64b83480cf109289b0df31}\label{classRouteModel_1_1Node_a3fdd3df8db64b83480cf109289b0df31}} 
+\index{RouteModel::Node@{RouteModel::Node}!visited@{visited}}
+\index{visited@{visited}!RouteModel::Node@{RouteModel::Node}}
+\doxysubsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily bool Route\+Model\+::\+Node\+::visited = false}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{route__model_8h}{route\+\_\+model.\+h}}\item 
+src/\mbox{\hyperlink{route__model_8cpp}{route\+\_\+model.\+cpp}}\end{DoxyCompactItemize}
